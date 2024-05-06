@@ -1,0 +1,33 @@
+Generating report for minidump
+
+Application version 5.4.1.0
+ ... built from changelist 33305029
+
+OS version Linux 6.5.0-28-generic (network name: PDC-NL-L174)
+Running 4 x86_64 processors (8 logical cores)
+Exception was "SIGSEGV: invalid attempt to read memory at address 0x00000af7265b47c8"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-Renderer.so!Nanite::FRenderer::FDispatchContext::DispatchSW(FRHIComputeCommandList&, Nanite::FRenderer::FDispatchContext::FDispatchList const&, FViewInfo const&, int, FRasterizePassParameters, bool) const [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Renderer/Private/Nanite/NaniteCullRaster.cpp:2657]
+libUnrealEditor-Renderer.so!TRDGLambdaPass<FRasterizePassParameters, Nanite::FRenderer::AddPass_Rasterize(Nanite::FRenderer::FDispatchContext const&, Nanite::FPackedViewArray const&, FRDGBuffer*, FRDGBuffer*, FRDGBuffer*, FGlobalWorkQueueParameters const&, FGlobalWorkQueueParameters const&, bool)::$_4>::Execute(FRHIComputeCommandList&) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/RenderCore/Public/RenderGraphPass.h:626]
+libUnrealEditor-RenderCore.so!FRDGBuilder::ExecutePass(FRDGPass*, FRHIComputeCommandList&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/RenderCore/Private/RenderGraphBuilder.cpp:3014]
+libUnrealEditor-RenderCore.so!UE::Tasks::Private::TExecutableTaskBase<FRDGBuilder::SetupParallelExecute()::$_1, void, void>::ExecuteTask() [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Tasks/TaskPrivate.h:855]
+libUnrealEditor-RenderCore.so!UE::Tasks::Private::FTaskBase::TryExecuteTask() [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Tasks/TaskPrivate.h:504]
+libUnrealEditor-RenderCore.so!LowLevelTasks::TTaskDelegate<LowLevelTasks::FTask* (bool), 48u>::TTaskDelegateImpl<void LowLevelTasks::FTask::Init<UE::Tasks::Private::FTaskBase::Init(char16_t const*, LowLevelTasks::ETaskPriority, UE::Tasks::EExtendedTaskPriority, UE::Tasks::ETaskFlags)::'lambda'()>(char16_t const*, LowLevelTasks::ETaskPriority, UE::Tasks::Private::FTaskBase::Init(char16_t const*, LowLevelTasks::ETaskPriority, UE::Tasks::EExtendedTaskPriority, UE::Tasks::ETaskFlags)::'lambda'()&&, LowLevelTasks::ETaskFlags)::'lambda'(bool), false>::CallAndMove(LowLevelTasks::TTaskDelegate<LowLevelTasks::FTask* (bool), 48u>&, void*, unsigned int, bool) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Async/Fundamental/TaskDelegate.h:171]
+libUnrealEditor-Core.so!LowLevelTasks::FTask::ExecuteTask() [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Async/Fundamental/Task.h:627]
+libUnrealEditor-Core.so!LowLevelTasks::FScheduler::ExecuteTask(LowLevelTasks::FTask*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/Async/Fundamental/Scheduler.cpp:155]
+libUnrealEditor-Core.so!LowLevelTasks::FScheduler::WorkerMain(LowLevelTasks::Private::FWaitEvent*, LowLevelTasks::Private::TLocalQueueRegistry<1024u>::TLocalQueue*, unsigned int, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/Async/Fundamental/Scheduler.cpp:396]
+libUnrealEditor-Core.so!FThreadImpl::Run() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/HAL/Thread.cpp:66]
+libUnrealEditor-Core.so!FRunnableThreadPThread::Run() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/HAL/PThreadRunnableThread.cpp:25]
+libUnrealEditor-Core.so!FRunnableThreadPThread::_ThreadProc(void*) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Private/HAL/PThreadRunnableThread.h:187]
+libc.so.6!UnknownFunction(0x94ac2)
+libc.so.6!UnknownFunction(0x12684f)
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

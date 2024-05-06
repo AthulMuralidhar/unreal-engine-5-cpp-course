@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"/home/athul/unreal-engine-5-cpp-course/introproject1/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/9/P2/RRJQG6I758LS295LOP6JIE.uasset",
+				"/home/athul/unreal-engine-5-cpp-course/introproject1/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/9/OK/1MS084XH4MW8GJ6UG92KCB.uasset",
+				"/home/athul/unreal-engine-5-cpp-course/introproject1/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/4/NH/DHVASWCI9RY7FQFTIADPIJ.uasset",
+				"/home/athul/unreal-engine-5-cpp-course/introproject1/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/E/RA/8FFCV5REQ1V7T0U9S0SN6J.uasset",
+				"/home/athul/unreal-engine-5-cpp-course/introproject1/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/E/ZP/BQ7FUOZRIE5K3CCAHZGLGG.uasset",
+				"/home/athul/unreal-engine-5-cpp-course/introproject1/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/3/5N/CES6LTQU8WWRCN5Z3BASEG.uasset"
+			]
+		}
+	]
+}
